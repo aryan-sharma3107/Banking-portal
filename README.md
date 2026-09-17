@@ -1,106 +1,136 @@
 # Banking Portal
 
-The **Banking Portal API** is a Java-based backend application that provides APIs for managing user accounts, banking transactions, and fund transfers. The system is designed to provide secure and efficient banking operations.
+## 1. Project Title
 
-## Features
+**Banking Portal – Java Based Banking Management System**
 
-* **User Registration:** Users can register by providing details such as name, email, address, and phone number.
-* **User Login:** Users can log in securely and receive an authentication token.
-* **PIN Management:** Users can create, check, and update their account PIN.
-* **Cash Deposit:** Users can deposit money into their bank account.
-* **Cash Withdrawal:** Users can withdraw money from their account.
-* **Fund Transfer:** Users can transfer money to other accounts.
-* **Transaction History:** Users can view their previous banking transactions.
-* **Account Details:** Users can view their account information and balance.
-<img width="1600" height="853" alt="edf412bf-62d1-42f0-8e52-68867ad607d1" src="https://github.com/user-attachments/assets/61089f29-38aa-4231-b551-65280f6ac8c8" />
+## 2. Overview of the Project
 
-## Technologies Used
+The **Banking Portal** is a Java-based backend application developed using **Spring Boot**. It provides APIs for managing users, bank accounts, and financial transactions.
 
-* **Java** – Main programming language
-* **Spring Boot** – Backend framework for developing REST APIs
-* **Spring Web** – Used to create RESTful API endpoints
-* **Spring Security** – Used for authentication and authorization
-* **JWT (JSON Web Token)** – Used for secure bearer-token authentication
-* **MySQL** – Database for storing users, accounts, and transactions
-* **Maven** – Used for project building and dependency management
-* **Postman** – Used for API testing
-* **Git & GitHub** – Used for version control and project management
+The system allows users to register, log in, manage their PIN, deposit and withdraw money, transfer funds, and view their transaction history.
 
-## Authentication
+The application uses **JWT-based authentication** to protect secure banking operations and **MySQL** to store user, account, and transaction data.
 
-The API uses **Bearer Token Authentication**.
+### Problem Statement
 
-Users must first log in to obtain a valid JWT access token. The token must then be included in the `Authorization` header when accessing protected endpoints.
+Managing banking operations manually can be time-consuming and may result in errors. The Banking Portal provides a digital system that allows users to perform common banking operations securely through APIs.
 
-This helps prevent unauthorized users from accessing protected banking operations.
+### Scope of the Project
 
-## API Operations
+The project covers:
 
-The Banking Portal provides APIs for the following operations:
+* User registration and login
+* Account management
+* PIN management
+* Cash deposit and withdrawal
+* Fund transfers
+* Transaction history
+* Secure API authentication
+* Database management
+
+### Target Users
+
+* **Bank Customers** – To manage accounts and perform banking operations.
+* **Bank Staff/Admin** – To manage and monitor banking information.
+* **Students/Developers** – To learn about Java-based banking API development.
+
+## 3. Features
 
 ### User Management
 
-* User Registration
-* User Login
-* View User Details
+* User registration
+* User login
+* View user details
+* JWT-based authentication
 
 ### Account Management
 
-* View Account Details
+* View account details
+* Check account balance
 * Create PIN
 * Check PIN
 * Update PIN
 
 ### Banking Operations
 
-* Deposit Money
-* Withdraw Money
-* Transfer Funds
-* View Transaction History
+* Deposit money
+* Withdraw money
+* Transfer funds
+* View transaction history
 
-## Installation and Setup
+### Security
 
-1. Clone the Repository
-2. Navigate to the Project Folder
-3. Configure MySQL
-4. Build and Run the Project
+* Bearer token authentication
+* Protected API endpoints
+* Unauthorized access handling
+* Global exception handling
 
-## Error Handling
+## 4. Technologies and Tools Used
 
-The application uses **global exception handling** to manage common errors and return appropriate HTTP status codes.
+| Technology/Tool     | Purpose                           |
+| ------------------- | --------------------------------- |
+| **Java**            | Main programming language         |
+| **Spring Boot**     | Backend application development   |
+| **Spring Web**      | Creating REST APIs                |
+| **Spring Security** | Authentication and authorization  |
+| **JWT**             | Secure token-based authentication |
+| **MySQL**           | Database management               |
+| **Maven**           | Dependency and project management |
+| **Postman**         | API testing                       |
+| **Git & GitHub**    | Version control                   |
 
-### Common Exceptions
+## 5. Installation and Running the Project
 
-* **NotFoundException** – Returns `404 Not Found` when the requested user, account, or transaction does not exist.
-* **UnauthorizedException** – Returns `401 Unauthorized` when the user is not properly authenticated or does not have permission.
-* **InsufficientBalanceException** – Returns `400 Bad Request` when the account does not have enough balance for a withdrawal or transfer.
+Step 1: Clone the Repository
+
+Step 2: Navigate to the Project
+
+Step 3: Configure MySQL
+
+Step 4: Build and Run
+
+## 6. Testing Instructions
+
+The APIs can be tested using **Postman**.
+
+Step 1: Start the Application
+
+Step 2: Open Postman
+
+Step 3: Test User Registration
+
+Step 4: Test Login
+
+Step 5: Add Authentication
+
+Step 6: Test Banking Operations
+
+### Expected Status Codes
+
+* **200 OK** – Request completed successfully
+* **201 Created** – New resource created successfully
+* **400 Bad Request** – Invalid request or insufficient balance
+* **401 Unauthorized** – Authentication required or invalid token
+* **404 Not Found** – Requested account or resource does not exist
 
 ## Future Enhancements
 
-The following features can be added in future versions:
-
-* Fix dashboard charts and improve UI
+* Improve dashboard charts
 * Add pagination to transaction tables
-* Store and manage JWT tokens securely in the database
-* Add email notifications for account login
+* Add email notification for account login
 * Send bank statements through email
-* Add better input validation
-* Improve transaction security and logging
-
-## Project Objective
-
-The main objective of this project is to develop a **secure and user-friendly banking backend using Java and Spring Boot**. It allows users to manage their accounts, perform banking transactions, and securely transfer funds through REST APIs.
+* Improve JWT token management
+* Add stronger input validation
+* Add detailed transaction logging
 
 ## Conclusion
 
-The Banking Portal provides a structured backend system for basic banking operations. By using **Java, Spring Boot, MySQL, JWT, and REST APIs**, the project demonstrates how a secure and scalable banking application can be developed.
+The **Banking Portal** is a Java and Spring Boot-based application that provides essential banking operations through REST APIs. It demonstrates the use of **Java, Spring Boot, MySQL, JWT authentication, Maven, and Postman** to build and test a secure backend system.
 
 
-
-
-
-
-
+<img width="1600" height="853" alt="edf412bf-62d1-42f0-8e52-68867ad607d1" src="https://github.com/user-attachments/assets/28f40c8f-977d-4aee-9ac7-6f23c0b09b4b" />
+<img width="1536" height="1024" alt="3a19945a-e100-4fc9-a8ef-4b46617f4246" src="https://github.com/user-attachments/assets/576a91cf-fcf4-4e99-8dd1-17773217c4f9" />
 
 
 
