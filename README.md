@@ -12,7 +12,7 @@ The **Banking Portal API** is a Java-based backend application that provides API
 * **Fund Transfer:** Users can transfer money to other accounts.
 * **Transaction History:** Users can view their previous banking transactions.
 * **Account Details:** Users can view their account information and balance.
-blob:https://web.whatsapp.com/edf412bf-62d1-42f0-8e52-68867ad607d1
+<img width="1600" height="853" alt="edf412bf-62d1-42f0-8e52-68867ad607d1" src="https://github.com/user-attachments/assets/61089f29-38aa-4231-b551-65280f6ac8c8" />
 
 ## Technologies Used
 
